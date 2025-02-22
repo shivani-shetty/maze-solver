@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maze Solver</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="options">
+        <ul>
+          <li><a href="#" id="astar" class="choosen">A star</a></li>
+          <li><a href="#" bfs id="bfs">Breadth First Search</a></li>
+          <li><a href="#" id="dfs">Depth First Search</a></li>
+          <li><a href="#" id="dijkstra">Dijkstra</a></li>
+        </ul>
+      </div>
+
+      <div id="symbols">
+        <div id="s1">
+          <i
+            class="fas fa-running fa-2x"
+            style="color: rgba(0, 0, 0, 0.75)"
+            id="icon1"
+          ></i>
+
+          <i
+            class="fa fa-map-marker fa-2x"
+            aria-hidden="true"
+            style="color: rgba(0, 0, 0, 0.75)"
+            id="icon2"
+          ></i>
+          <div id="symbol1"></div>
+          <div id="symbol2"></div>
+          <div id="symbol3"></div>
+        </div>
+
+        <div id="names">
+          <ul>
+            <li>Source</li>
+            <li id="name2">Destination</li>
+            <li id="name3">Visited</li>
+            <li id="name4">Walls</li>
+            <li id="name5">Path</li>
+          </ul>
+        </div>
+
+        <div id="s2">
+          <a href="#">
+            <div id="play">
+              <span id="playText">Play</span>
+            </div>
+          </a>
+        </div>
+
+        <div id="s3">
+          <a href="#" id="reset">Reset the maze</a>
+          <a href="#" id="generate">Generate walls</a>
+        </div>
+
+        <div id="s4">
+          <ul>
+            <li>Choose an algorithm</li>
+            <li>Choose a source and destination</li>
+            <li>Build walls</li>
+            <li>Click on play</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="container"></div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+#main {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 11% 10% auto;
+  grid-template-areas:
+    "options"
+    "symbols"
+    "cells";
+}
+
+#options {
+  grid-area: options;
+  background-color: #044343;
+}
+
+#options ul {
+  list-style: none;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 15%;
+  left: 25%;
+}
+
+#options li {
+  display: inline-block;
+  height: 20%;
+}
+
+#options a {
+  text-decoration: none;
+  color: #e4e4e4;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-family: arial;
+  width: 100%;
+  height: 100%;
+}
+
+#options a:hover {
+  border-radius: 0px;
+  background: #044343;
+  box-shadow: 6px 6px 12px #022626, -6px -6px 12px #066060;
+}
+
+.choosen {
+  border-radius: 0px;
+  background: #044343;
+  box-shadow: 6px 6px 12px #022626, -6px -6px 12px #066060;
+}
+
+#symbols {
+  grid-area: symbols;
+  background-color: #e4e4e4;
+
+  display: grid;
+  grid-template-columns: 37.5% 20% 22.5% auto;
+  grid-template-rows: 70% auto;
+  grid-template-areas:
+    "s1 s2 s3 s4"
+    "names s2 s3 s4";
+}
+
+#names {
+  grid-area: names;
+}
+
+#names ul {
+  position: relative;
+  left: -4%;
+}
+
+#names li {
+  display: inline-block;
+}
+
+#name2 {
+  position: relative;
+  left: 12.5%;
+}
+
+#name3 {
+  position: relative;
+  left: 26%;
+}
+
+#name4 {
+  position: relative;
+  left: 39%;
+}
+
+#name5 {
+  position: relative;
+  left: 54%;
+}
+#s1 {
+  grid-area: s1;
+}
+
+#icon1 {
+  position: relative;
+  transform: translateX(5%);
+  transform: translateY(40%);
+  left: 5%;
+}
+
+#icon2 {
+  position: relative;
+  transform: translateX(5%);
+  transform: translateY(40%);
+  left: 22.5%;
+}
+
+#symbol1 {
+  background-color: #588da8;
+  width: 6%;
+  height: 50%;
+  position: relative;
+  top: -35%;
+  left: 50%;
+}
+
+#symbol2 {
+  background-color: #222831;
+  width: 6%;
+  height: 50%;
+  position: relative;
+  top: -85%;
+  left: 70%;
+}
+
+#symbol3 {
+  background-color: #ffc045;
+  width: 6%;
+  height: 50%;
+  position: relative;
+  top: -135%;
+  left: 90%;
+}
+
+#s2 {
+  grid-area: s2;
+}
+
+#symbols #play {
+  background-color: #045757;
+  width: 90%;
+  height: 90%;
+  border-radius: 80px;
+  text-align: center;
+  position: relative;
+
+  top: -40%;
+  box-shadow: 0px 5px 6px 4px #232323;
+  transition: 0.2s ease;
+}
+
+#symbols #play:hover {
+  width: 100%;
+  height: 100%;
+}
+
+#playText {
+  position: relative;
+  top: 33%;
+}
+
+#symbols #s2 a {
+  position: relative;
+  left: 45%;
+  text-decoration: none;
+  color: #e4e4e4;
+  display: block;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+#s3 {
+  grid-area: s3;
+}
+
+#container {
+  grid-area: cells;
+  background-color: #e4e4e4;
+  width: 100%;
+}
+
+.visited {
+  background-color: green;
+}
+
+.cell {
+  width: 2%;
+  height: 5%;
+  border: 0.98px solid rgba(2, 66, 73, 0.2);
+  float: left;
+  text-align: center;
+}
+
+.walls {
+  background-color: #222831;
+}
+
+#s3 a {
+  text-decoration: none;
+  color: gray;
+
+  color: #232323;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: relative;
+  top: 33%;
+
+  border-radius: 0px;
+  background: #e4e4e4;
+  box-shadow: 5px 5px 10px #c2c2c2, -5px -5px 10px #ffffff;
+}
+
+#s3 a:hover {
+  border-radius: 0px;
+  background: #e4e4e4;
+  box-shadow: inset 5px 5px 10px #c2c2c2, inset -5px -5px 10px #ffffff;
+}
+
+#s4 {
+  grid-area: s4;
+}
+
+#s4 ul {
+  list-style: none;
+  opacity: 0.5;
+  font-style: italic;
+}

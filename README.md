@@ -2,6 +2,8 @@
 
 A web-based **pathfinding visualizer** that demonstrates popular pathfinding algorithms like **DFS, BFS, Dijkstra, and A\* Search**. This interactive tool allows users to set a start and end point, place obstacles, and visualize how different algorithms find the shortest path.
 
+You can find the web app on  https://shivani-shetty.github.io/maze-solver/#
+
 ## 🚀 Features
 
 - 🏃 **Set Start & End Points** – Click on the grid to choose your start and goal positions.

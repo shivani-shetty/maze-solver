@@ -73,7 +73,7 @@ function algorithm() {
   timer = 0;
 
   if (!startSelected || !endSelected) {
-    alert("Choose source and destination, dumbass!");
+    alert("Please choose source and destination!");
     return;
   }
 
